@@ -1,7 +1,9 @@
 extends layout
 
 block content
-  h1= title
-  h3 Welcome to #{title}
-  h3 Some other body should show here: #{body}
-  p I am not sure how this works. Since the HTML preprocessor is Jade I am unser how to change stuff.
+    div.container
+      h1= title
+      div.jumbotron
+        h3 Welcome to #{title}
+      h3 Some other body should show here: #{body}
+      p I am not sure how this works. Since the HTML preprocessor is Jade I am unser how to change stuff.

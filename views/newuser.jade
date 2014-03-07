@@ -1,9 +1,12 @@
 extends layout
 
 block content
-    h1= title
-    form#formAddUser(name="adduser",method="post",action="/adduser")
-        input#inputUserName(type="text", placeholder="Name", name="username")
-        input#inputUserEmail(type="text", placeholder="Email", name="useremail")
-        input#inputUserRole(type="text", placeholder="Role", name="userrole")
-        button#btnSubmit(type="submit") submit
+    div.container
+        h1= title
+        h3 New student?
+        p Add their name, email, roles or privilages you would like to bestow upon them below and then hit "Submit"
+        form#formAddUser(name="adduser",method="post",action="/adduser")
+            input#inputUserName(type="text", placeholder="Name", name="username")
+            input#inputUserEmail(type="text", placeholder="Email", name="useremail")
+            input#inputUserRole(type="text", placeholder="Role", name="userrole")
+            button#btnSubmit(type="submit") submit

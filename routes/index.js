@@ -4,7 +4,7 @@
  */
 
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'UberWatcher', body: 'Keep an eye on your students' });
 };
 
 exports.helloworld = function(req, res){
